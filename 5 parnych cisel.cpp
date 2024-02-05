@@ -34,21 +34,22 @@ int main()
     if (*pModulo1==0){
         *pPocetParnych1=*pPocetParnych+1;
     }
-    else if (*pModulo2==0){
+    if (*pModulo2==0){
         *pPocetParnych1=*pPocetParnych1+1;
     }
-    else if (*pModulo3==0){
+    if (*pModulo3==0){
         *pPocetParnych1=*pPocetParnych1+1;
     }
-    else if (*pModulo4==0){
+    if (*pModulo4==0){
         *pPocetParnych1=*pPocetParnych1+1;
     }
-    else if (*pModulo5==0){
+    if (*pModulo5==0){
         *pPocetParnych1=*pPocetParnych1+1;
     }
     cout<<endl<<"Pocet parnych je: "<<*pPocetParnych1<<endl;
-    delete pPocetParnych, pModulo1, pModulo2, pModulo3, pModulo4, pModulo5, pCislo1, pCislo2,pCislo3,pCislo4,pCislo5;
+    delete pPocetParnych,pPocetParnych1, pModulo1, pModulo2, pModulo3, pModulo4, pModulo5, pCislo1, pCislo2,pCislo3,pCislo4,pCislo5;
     pPocetParnych = 0;
+    pPocetParnych1 = 0;
     pModulo1= 0;
     pModulo2= 0;
     pModulo3= 0;
